@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_friend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="rank" />
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/rank"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/coverImage"
+            android:layout_toStartOf="@+id/nbPts"
+            android:lines="2"
+            android:paddingLeft="13dp"
+            android:text="@string/title" />
+
+        <TextView
+            android:id="@+id/nbPts"
+            android:layout_width="101dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="nbPts" />
+
+
+        <TextView
+            android:id="@+id/matchsPlayed"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/title"
+            android:layout_toEndOf="@+id/coverImage"
+            android:text="MJ" />
+        <!--            android:layout_toEndOf="@+id/coverImage"-->
+        <!--            android:layout_toStartOf="@+id/matchsWon" -->
+
+        <TextView
+            android:id="@+id/matchsNull"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/title"
+            android:layout_toEndOf="@+id/matchsWon"
+
+            android:text="N" />
+        <!--            android:layout_toEndOf="@+id/matchsWon"-->
+
+        <TextView
+            android:id="@+id/matchsWon"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/title"
+
+            android:layout_toEndOf="@+id/matchsPlayed"
+            android:text="G" />
+        <!--            android:layout_toEndOf="@+id/matchsPlayed"-->
+
+        <TextView
+            android:id="@+id/matchsLost"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/title"
+            android:layout_toEndOf="@+id/matchsNull"
+            android:text="P" />
+
+
+        <TextView
+            android:id="@+id/BP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/matchsPlayed"
+            android:layout_toEndOf="@+id/coverImage"
+            android:text="BP" />
+        <!--            android:layout_toStartOf="@+id/BC" -->
+
+        <TextView
+            android:id="@+id/BC"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/matchsWon"
+            android:layout_toEndOf="@+id/BP"
+            android:text="BC" />
+        <!--            android:layout_toEndOf="@+id/BP"-->
+        <TextView
+            android:id="@+id/DB"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/matchsNull"
+            android:layout_toEndOf="@+id/BC"
+            android:text="DB" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

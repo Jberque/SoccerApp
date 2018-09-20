@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_friend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:text="date" />
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/date"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/coverImage2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/date"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nomEquipeActive"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="66dp"
+            android:layout_toEndOf="@+id/coverImage2"
+            android:lines="2"
+            android:paddingLeft="20dp"
+            android:scaleType="centerCrop"
+            android:text="nomEquipeActive" />
+
+        <TextView
+            android:id="@+id/pointsEquipeActive"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="66dp"
+            android:layout_toEndOf="@+id/nomEquipeActive"
+            android:scaleType="centerCrop"
+            android:text="ptsEquipeActive" />
+
+        <TextView
+            android:id="@+id/-"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="66dp"
+            android:layout_toEndOf="@+id/pointsEquipeActive"
+            android:scaleType="centerCrop"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/pointsEquipeAdverse"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="66dp"
+            android:layout_toEndOf="@+id/-"
+            android:scaleType="centerCrop"
+            android:text="ptsEquipeAdverse" />
+
+        <TextView
+            android:id="@+id/nomEquipeAdverse"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="66dp"
+            android:layout_toEndOf="@+id/pointsEquipeAdverse"
+            android:layout_toStartOf="@id/coverImage"
+            android:lines="2"
+            android:paddingRight="20dp"
+            android:scaleType="centerCrop"
+            android:text="nomEquipeAdverse" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
