@@ -26,7 +26,7 @@ public interface SoccerAPIService {
     Call<Team> getTeam(@Path("id") String id);
 
     @Headers("X-Auth-Token: 91134751c290476c8f76be8ba31fcd3d")
-    @GET("/v2/teams?areas=2081,2000")
+    @GET("/v2/teams?areas=2081,2000,2152")
     Call<TeamList> getTeams();
 
 
